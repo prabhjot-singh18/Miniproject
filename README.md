@@ -1,59 +1,44 @@
-## Title of the Project
-Small description about the project like one below
-The integration of a chatbot within a hostel booking system, aimed at streamlining the reservation process for students and improving the overall user experience.
+## Lane lines detection using Python and OpenCV
+This project focuses on developing a robust lane line detection system aimed at autonomous driving and Advanced Driver Assistance Systems (ADAS). The project uses Python and OpenCV to detect and track lane lines accurately under varying environmental conditions, ensuring safer navigation.
 
 ## About
-<!--Detailed Description about the project-->
-Tailored Chatbot for Hostel Booking System is a project designed to integrate a chatbot that leverages advanced natural language processing techniques to understand and respond to user queries to the hostel booking system. Traditional hostel booking processes are often time-consuming and involve manual searches and extensive communication with hostel staff. This project seeks to overcome these challenges by creating an easy-to-use chatbot interface that assists students in addressing inquiries.
+The Lane Line Detection system identifies road lane lines in real-time to support autonomous vehicles and ADAS. The project addresses challenges like lighting variations, road curvature, and noise through advanced image processing techniques such as the Canny edge detection and Hough Transform. The aim is to provide an efficient and reliable solution adaptable to diverse driving environments and lane styles.
 
 ## Features
-<!--List the features of the project as shown below-->
-- Implements advance neural network method.
-- A framework based application for deployment purpose.
-- High scalability.
-- Less time complexity.
-- A specific scope of Chatbot response model, using json data format.
+-Edge Detection: Implements the Canny edge detection algorithm to highlight lane boundaries. -Line Detection: Uses Hough Transform to detect straight lane lines. -Real-World Adaptability: Handles varying environmental conditions like shadows, fog, and road curvature. -Region of Interest (ROI) Masking: Focuses on the relevant road area to reduce processing overhead. -Lane Extrapolation: Smooths gaps in lane lines using slope and intercept averaging.
 
 ## Requirements
-<!--List the requirements of the project as shown below-->
-* Operating System: Requires a 64-bit OS (Windows 10 or Ubuntu) for compatibility with deep learning frameworks.
-* Development Environment: Python 3.6 or later is necessary for coding the sign language detection system.
-* Deep Learning Frameworks: TensorFlow for model training, MediaPipe for hand gesture recognition.
-* Image Processing Libraries: OpenCV is essential for efficient image processing and real-time hand gesture recognition.
-* Version Control: Implementation of Git for collaborative development and effective code management.
-* IDE: Use of VSCode as the Integrated Development Environment for coding, debugging, and version control integration.
-* Additional Dependencies: Includes scikit-learn, TensorFlow (versions 2.4.1), TensorFlow GPU, OpenCV, and Mediapipe for deep learning tasks.
+Hardware:
+
+NVIDIA GeForce GTX 1650 (for GPU acceleration) 8 GB RAM 12th Gen Intel Core i5 Processor Software:
+
+Python 3.8 (primary development language) Anaconda for managing dependencies OpenCV 3.1.0 for image and video processing tasks
 
 ## System Architecture
-<!--Embed the system architecture diagram as shown below-->
-
-![Screenshot 2023-11-25 133637](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/a60c11f3-0a11-47fb-ac89-755d5f45c995)
+Preprocessing: Converts images to grayscale and applies Gaussian blur to reduce noise. Edge Detection: Identifies lane edges using the Canny algorithm. ROI Selection: Masks the road area using a trapezoidal region. Line Detection: Detects lane lines using Hough Transform. Extrapolation: Averages detected lines to form continuous lane boundaries.
 
 
 ## Output
 
-<!--Embed the Output picture at respective places as shown below as shown below-->
-#### Output1 - Name of the output
+![image](https://github.com/user-attachments/assets/bfe8a602-2e8e-428a-b636-82781622b5d1)
 
-![Screenshot 2023-11-25 134037](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/8c2b6b5c-5ed2-4ec4-b18e-5b6625402c16)
-
-#### Output2 - Name of the output
-![Screenshot 2023-11-25 134253](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/5e05c981-05ca-4aaa-aea2-d918dcf25cb7)
-
-Detection Accuracy: 96.7%
-Note: These metrics can be customized based on your actual performance evaluations.
 
 
 ## Results and Impact
-<!--Give the results and impact as shown below-->
-The Sign Language Detection System enhances accessibility for individuals with hearing and speech impairments, providing a valuable tool for inclusive communication. The project's integration of computer vision and deep learning showcases its potential for intuitive and interactive human-computer interaction.
+Output Type: Visual overlay of detected lane lines on the original video or image.
 
-This project serves as a foundation for future developments in assistive technologies and contributes to creating a more inclusive and accessible digital environment.
+Performance: Works well under normal road conditions and daylight, but struggles with tight curves and extreme lighting.
+
+Strengths: Real-time detection, efficient handling of straight lanes, and minimal delay.
+
+Limitations: Detection accuracy drops in low-light and extreme weather scenarios.
 
 ## Articles published / References
-1. N. S. Gupta, S. K. Rout, S. Barik, R. R. Kalangi, and B. Swampa, “Enhancing Heart Disease Prediction Accuracy Through Hybrid Machine Learning Methods ”, EAI Endorsed Trans IoT, vol. 10, Mar. 2024.
-2. A. A. BIN ZAINUDDIN, “Enhancing IoT Security: A Synergy of Machine Learning, Artificial Intelligence, and Blockchain”, Data Science Insights, vol. 2, no. 1, Feb. 2024.
+Noor Jannah Zakaria et al., "Lane Detection in Autonomous Vehicles: A Systematic Review," IEEE Access, 2023.
 
+LVLane: "Deep Learning for Lane Detection and Classification in Challenging Conditions," ArXiv, 2023.
+
+"Robust Lane Detection Through Self Pre-Training With Masked Sequential Learning," IEEE Xplore, 2023.
 
 
 
